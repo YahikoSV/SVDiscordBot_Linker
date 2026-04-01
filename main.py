@@ -1,9 +1,9 @@
 # This example requires the 'message_content' intent.
 
-import discord
-import os
+import discord #discord python library
+import os #get env file
 
-from dotenv import load_dotenv
+from dotenv import load_dotenv  #load env file
 
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
