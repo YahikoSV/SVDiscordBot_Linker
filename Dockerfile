@@ -5,7 +5,7 @@ WORKDIR /app
 COPY . ./
 
 RUN pip3 install -r requirements.txt && \
-    playwright install
+    playwright install --with-deps chromium
 
 
 
