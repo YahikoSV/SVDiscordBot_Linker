@@ -7,26 +7,8 @@ import os #get env file
 from playwright.async_api import async_playwright, expect #headless browsing
 import random #random choice
 import webserver 
-
-
-from flask import Flask #keep alive
-from threading import Thread #keep alive
-
-
-import asyncio #asynchronous function to run?
-
 from dotenv import load_dotenv  #load env file
 
-#webserver
-app = Flask('')
-@app.route('/')
-def home():
-    return "Your Bot Is Ready"
-def run():
-    app.run(host="0.0.0.0", port=8000)
-def keep_alive():
-    server = Thread(target=run)
-    server.start()
 
 load_dotenv()
 TOKEN = os.getenv('TOKEN')
