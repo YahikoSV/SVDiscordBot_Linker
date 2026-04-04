@@ -27,23 +27,6 @@ async def on_command_error(ctx, error):
         return  # Ignore the error quietly
     raise error  # Propagate other errors to the console
 
-
-# @bot.event
-# async def on_message(message):
-#     if message.content.startswith('大きな'):
-#         await message.channel.send('すきだよ！')
-#  #       await bot.process_commands(message) #https://discordpy.readthedocs.io/en/latest/faq.html#why-does-on-message-make-my-commands-stop-working
-
-#     if message.content.startswith('Is Rigze live?'):
-#         response = await main(yt_name='rigze0925')
-#         await message.channel.send(response)
-#     await bot.process_commands(message)
-
-# @bot.listen('on_message')
-# async def asdf(message):
-#     if message.content.startswith('大きな'):
-#         await message.channel.send('すきだよ！')    
-
 @bot.command(name='大きな')
 async def shymm(ctx):
     await ctx.send('すきだよ！')
